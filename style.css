@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poiret One', sans-serif;
+}
+
+.main__picture__container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/WhatsApp\ Image\ 2023-11-28\ at\ 12.49.26\ AM.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.nav__bar__container{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.nav__items__cont{
+    color: white;
+    list-style: none;
+    width: 60%;
+    height: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    animation: slideDownAnimation 1.5s forwards;   
+}
+
+.nav__item{
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-bottom: 1px solid transparent; 
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav__item:hover{
+    border-bottom: 1px solid rgb(192, 192, 192);
+    color: rgb(192, 192, 192);
+}
+
+@keyframes slideDownAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+
+.navbar.hidden {
+    top: -100px; /* Move the navbar above the viewport to hide it */
+}
+
+
+.main__bg__info{
+    margin-top: 15%;
+    color: white;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__text{
+    width: 50%;
+    height: 90%;
+    font-size: 3rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: opacityInc 2s ease;
+}
+
+.me__work{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    animation: borderInc 1s forwards;
+    cursor: pointer;
+    font-family: 'Amatic SC', sans-serif;
+    padding-bottom: 1rem;
+    transition: border-bottom 0.3s ease;
+    border-bottom: 1px solid transparent; /* Transparent border initially */
+}
+
+.me__work:hover{
+    color: rgb(220, 220, 220);
+    border-bottom: 1px solid white; /* Change border color on hover */
+}
+
+
+
+@keyframes borderInc {
+    0%{
+        margin-bottom: 0px;
+    }100%
+    {
+        margin-bottom: 30px;
+    }
+}
+
+.opacity{
+    animation: opacityInc 1s ease-in-out;
+}
+
+@keyframes opacityInc{
+    0%{
+        opacity: 0;
+    }100%{
+        opacity: 1;
+    }
+}
+
+.underline__head{
+    width: 50%;
+    height: 1%;
+    background-color: white;
+    animation: fillAnimation 4s forwards;
+}
+
+@keyframes fillAnimation {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 40%;
+    }
+  }
+  
+
+.portfolio__container{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    
+}
+
+.about__container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    background-color: black;
+}
+
+.inside__about{
+    width: 80%;
+    height: 85%;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    border-left: 1px solid rgba(255,255, 255, 0.3);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.abt__me{
+    color: white;
+    width: 80%;
+    height: 15%;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    border-left: 1px solid rgba(255,255, 255, 0.3);
+    font-family: 'Amatic SC', sans-serif;
+    line-height: 50px;
+}
+
+.abt__me__text{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+}
+
+.its__me{
+    width: 90%;
+    max-width: 100%;
+    font-size: 1.5rem;
+    font-family: 'Amatic SC', sans-serif;
+    margin-bottom: 2%;
+}
+
+.my__description{
+    width: 90%;
+    max-width: 100%;
+    font-size: 0.9vw;
+    letter-spacing: 3px;
+    line-height: 150%;
+    text-align: justify;
+    margin-bottom: 5%;
+}
+
+
+.btn__download__CV{
+    width: 30%;
+    height: 7%;
+    border: 1px solid white;
+    border-radius: 20px;
+    background: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: 'Amatic SC', sans-serif;
+}
+
+.btn__download__CV:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+.abt__me__img{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.line__left{
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 1px;
+    margin-top: 10%;
+    height: 70%;
+}
+
+.img__container__abt{
+    width: 99%;
+    height: 95%;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.my__img__abt{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.skills__container{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+.services__container{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+.contact__container{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+
+}
+
+.my__scoials{
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(23, 23, 23);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.connect__head
+{
+    color: white;
+    font-size: 2rem;
+
+}
+
+.socials{
+    width: 50%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    list-style: none;
+    border-left: 1px solid white;
+}
+
+
+.social__item a{
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social__item a:hover{
+    color: rgb(192, 192, 192);
+}
+
+
+
+
+
+
+
+
+
